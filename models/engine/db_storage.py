@@ -77,8 +77,8 @@ class DBStorage:
 
     def get(self, cls, id):
         """
-        define get: to retrieve an object 
-        from file storage using its 
+        define get: to retrieve an object
+        from file storage using its
         class and id.
         """
         if cls and id:
@@ -90,10 +90,10 @@ class DBStorage:
             else:
                 return
         return
-    
+
     def count(self, cls=None):
         """
-        define count to count the object in the 
+        define count to count the object in the
         storage that matches the given class
         """
         if not cls:
@@ -102,5 +102,5 @@ class DBStorage:
         if cls in classes.values():
             all_inst_of_prov_cls = self.all(cls)
             return len(all_inst_of_prov_cls)
-        if cls not in  classes.values():
+        if cls not in classes.values():
             return

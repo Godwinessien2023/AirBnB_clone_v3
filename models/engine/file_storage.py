@@ -71,7 +71,7 @@ class FileStorage:
 
     def get(self, cls, id):
         """
-        define get to retrieve an object 
+        define get to retrieve an object
         from the file storage through cls and id
         """
         if cls and id:
@@ -83,7 +83,7 @@ class FileStorage:
                         return value
             return
         return
-    
+
     def count(self, cls=None):
         """
         define count to count the number of objects
